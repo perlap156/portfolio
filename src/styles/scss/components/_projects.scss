@@ -1,0 +1,41 @@
+@use "../base/_variables" as *;
+
+.project {
+
+    &-wrapper {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(450px, 1fr) );
+        grid-gap: 25px; 
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &-card {
+        a {
+            text-decoration: none;
+            color: $black;
+
+            &:hover {
+
+                img {
+                    transform: scale(1.025);
+                    box-shadow: 0px 0px 9px 4px $c-accent; 
+                }
+            }
+        }
+
+        img {
+            margin-bottom: 1em;
+            border-radius: 10px;
+            height: 230px;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+            transition: all 0.25s;
+
+        }
+    }
+}

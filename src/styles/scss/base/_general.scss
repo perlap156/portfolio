@@ -1,0 +1,147 @@
+@use "./_mixins";
+@use "./_variables" as *;
+
+body {
+  background-color: $bg-light;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 50px auto;
+    display: block;
+
+    @media (max-width: 1119px) {
+        padding: 0 1em;
+    }
+}
+
+
+.color {
+    &--accent {
+        color: $c-accent;
+    }
+
+    &--accent2 {
+        color: $c-accent-2;
+    }
+
+    &--accent3 {
+        color: $c-accent-3;
+    }
+
+    &--black {
+        color: $black;
+    }
+
+    &--grey {
+        color: $grey;
+    }
+
+    &--white {
+        color: $white;
+    }
+}
+
+.align--center {
+    text-align: center;
+}
+
+.all-caps {
+	text-transform: uppercase;
+}
+
+.heading-wrapper {
+    width: 100%;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 50%;
+        width: 100%;
+        height: 1.5px;
+        background: $bg-light;
+    }
+
+    .heading--med {
+        margin: 0 0 0 35px;
+        padding: 0 15px;
+        z-index: 2;
+        position: relative;
+        width: fit-content;
+    }
+
+    &--light {
+        &::after {
+            background: $c-accent;
+        }
+        
+        .heading--med {
+            background-color: $bg-light;
+        }
+    }
+}
+
+//button
+.btn {
+    position: relative;
+    display: inline-block;
+    width: auto; height: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 15px 25px;
+    min-width: 150px;
+
+    &:active, 
+    &:hover, 
+    &:focus {
+        outline: 0!important;
+        outline-offset: 0;
+    }
+
+    &::before,
+    &::after {
+        position: absolute;
+        content: "";
+    }
+
+    &::before {
+        background-color: $c-accent-3;
+        transition: 0.3s ease-out;
+    }
+
+
+    span {         
+        position: relative;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        top: 0; left: 0;
+        width: 100%;
+        padding: 15px 20px;
+        color: $black;
+        border: 2px solid $c-accent-3;
+        transition: 0.2s;
+
+        &:hover {
+            color: $white;
+            transition: 0.2s 0.1s;
+        }
+    }
+
+    &.hover-slide-right {
+        &::before {
+            top: 0; bottom: 0; left: 0; 
+            height: 100%; width: 0%;
+        }
+
+        &:hover::before {
+            width: 100%;
+        }
+    }
+
+}
+

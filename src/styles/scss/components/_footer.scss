@@ -1,0 +1,34 @@
+@use "../base/_variables" as *;
+
+footer {
+
+    //padding: 1rem 2rem;
+
+    ul {
+        padding-left: 0;
+        padding: 50px 0 0;
+        display: flex;
+        align-items: center;
+
+        li {
+            list-style-type: none;
+
+            &:not(:last-child) {
+                margin-right: .5em;
+            }
+
+            i {
+                font-size: 1.75em;
+
+                &:hover {
+                    color: $c-accent-2;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: $black;
+            }
+        }
+    }
+}

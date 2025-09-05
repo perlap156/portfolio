@@ -1,0 +1,122 @@
+@use "./_variables" as *;
+
+html {
+    &.dark {
+        /***
+        ****  GENERAL
+        ***/
+        transition: all ease-in-out 0.25s;
+
+        body {
+            background-color: $bg-dark;
+            color: $bg-light;
+        }
+
+        .color {
+            &--accent3 {
+                color: $c-accent-4;
+            }
+        }
+
+        .btn {
+            &::before {
+                background-color: $c-accent-4;
+                transition: 0.3s ease-out;
+            }
+
+
+            span {         
+
+                color: $bg-light;
+                border: 2px solid $c-accent-4;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+
+        .heading-wrapper {
+
+            &::after {
+                background: $bg-dark;
+            }
+
+            &--light {
+                &::after {
+                    background: $c-accent;
+                }
+                
+                .heading--med {
+                    background-color: $bg-dark;
+                }
+            }
+        }
+
+        /***
+        ****  HEADER
+        ***/
+
+        header {
+            background-color: $bg-dark;
+            color: $bg-light;
+
+            a,
+            .heading--sm.color--black {
+                color: $bg-light;
+            }
+
+            .theme-toggle {
+                i {
+                    color: $bg-light;
+                }
+            }
+
+            .nav-links {
+
+                @media (max-width: 768px) {
+                    background: $bg-dark;
+                }
+                a {
+                     &::after {
+                        background-image: linear-gradient(135deg, rgba(255, 255, 255, 0), $bg-dark, rgba(255,2550, 255, 0));
+                    }
+                }
+            }
+
+            .hamburger {
+
+                span {
+                    background: $bg-light;
+                }
+            }
+        }
+
+        /***
+        ****  PROJECTS
+        ***/
+
+        .project-card  {
+
+            a,
+            p.color--grey {
+                color: $bg-light;
+            }
+        }
+
+        /***
+        ****  FOOTER
+        ***/
+        footer {
+
+            i {
+                color: $bg-light;
+
+                &:hover {
+                    color: $c-accent-4;
+                }
+            }
+        }
+
+    }
+}

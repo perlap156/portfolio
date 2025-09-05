@@ -1,0 +1,154 @@
+@use "./_mixins";
+@use "./_variables" as *;
+
+//Global Variables
+$min_width: 20rem; // 320px
+$max_width: 87.5rem; // 1400px
+$min_font: 0.694rem;
+$max_font: 2.986rem; // 47.78px
+
+$f-primary: "EB Garamond", serif;
+$f-secondary: "Work Sans", sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    $min_font: 1rem;
+    $max_font: 1rem;
+    @include mixins.fluid-type($min_width, $max_width, $min_font, $max_font);
+    font-family: $f-secondary;
+    font-weight: 400;
+    line-height: 21px;
+    color: $black;
+}
+
+p {
+    margin: 16px 0;
+}
+
+.heading--xl {
+    $max_font: 6.25rem; // 47.78px
+    $min_font: 3.75rem; // 39.81px
+    
+    @include mixins.fluid-type($min_width, $max_width, $min_font, $max_font);
+    font-family: $f-primary;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: 125%;
+    margin-bottom: 1rem;
+
+    span.flower {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../assets/images/flower.png);
+            width: 41px;
+            height: 41px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            top: 18%;
+            left: -25%;
+
+            @media (max-width: 1200px) {
+                left: -37%;
+            }
+
+            @media (max-width: 1040px) {
+                top: 14%;
+                left: -44%;
+            }
+
+            @media (max-width: 768px) {
+                top: 11%;
+                left: -55%;
+            }
+
+            @media (max-width: 540px) {
+                width: 31px;
+                height: 31px;
+                top: 16%;
+                left: -44%;
+            }
+        }
+    }
+}
+
+.heading--lg {
+    $max_font: 2.986rem; // 47.78px
+    $min_font: 2.488rem; // 39.81px
+    
+    @include mixins.fluid-type($min_width, $max_width, $min_font, $max_font);
+    font-family: $f-primary;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.heading--med {
+    $max_font: 2.488rem; // 39.81px
+    $min_font: 2.074rem; // 33.18px
+    
+    @include mixins.fluid-type($min_width, $max_width, $min_font, $max_font);
+    font-family: $f-primary;
+    font-weight: 500;
+    line-height: 1.6;
+    //letter-spacing: 0.02em;
+    margin-bottom: 1rem;
+}
+
+.heading--sm {
+    $max_font: 2.074rem; // 33.18px
+    $min_font: 1.728rem; // 27.65px
+    
+    @include mixins.fluid-type($min_width, $max_width, $min_font, $max_font);
+    font-family: $f-primary;
+    font-weight: 700;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.heading--xs {
+    $max_font: 1.728rem; // 27.65px
+    $min_font: 1.44rem; // 23.04px
+    
+    @include mixins.fluid-type($min_width, $max_width, $min_font, $max_font);
+    font-family: $f-primary;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+small {
+    $max_font: 0.833rem; // 13.33px
+    $min_font: 0.833rem; // 13.33px
+
+    @include mixins.fluid-type($min_width, $max_width, $min_font, $max_font);
+    font-family: $f-secondary;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.caption {
+    $max_font: 0.694rem; // 11.11px
+    $min_font: 0.694rem; // 11.11px
+    
+    @include mixins.fluid-type($min_width, $max_width, $min_font, $max_font);
+    font-family: $f-secondary;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.sr-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+  }
