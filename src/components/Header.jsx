@@ -23,9 +23,9 @@ const Header = () => {
 
             {/* Navigation */}
             <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
-                <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
-                <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
-                <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
+                <a href="#about" className="hover-effect" onClick={() => setMenuOpen(false)}>About</a>
+                <a href="#projects" className="hover-effect" onClick={() => setMenuOpen(false)}>Projects</a>
+                <a href="#contact" className="hover-effect" onClick={() => setMenuOpen(false)}>Contact</a>
             </nav>
 
             <ThemeToggle />

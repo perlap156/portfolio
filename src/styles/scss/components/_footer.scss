@@ -17,6 +17,14 @@ footer {
                 margin-right: .5em;
             }
 
+            a {
+                &:hover {
+                    i {
+                        color: $c-accent-2;
+                    }
+                }
+            }
+            
             i {
                 font-size: 1.75em;
 

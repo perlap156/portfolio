@@ -20,7 +20,7 @@ const Footer = () => {
                     href={link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="footer-link"
+                    className="footer-link hover-effect"
                     aria-label={label}
                     >
                        <i className={icon}></i>

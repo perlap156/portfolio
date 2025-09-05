@@ -145,3 +145,25 @@ body {
 
 }
 
+// Hover effects
+
+/* ✅ Hover effects only on devices that support hover (desktop/laptop) */
+@media (hover: hover) and (pointer: fine) {
+  .hover-effect {
+    transition: all 0.25s ease;
+  }
+}
+
+/* 🚫 Disable hover on touch devices (mobile/tablet) */
+@media (hover: none) and (pointer: coarse) {
+  .hover-effect:hover {
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ✅ JS fallback (older iOS / edge cases) */
+.no-hover .hover-effect:hover {
+  transform: none !important;
+  transition: none !important;
+}

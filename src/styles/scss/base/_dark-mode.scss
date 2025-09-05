@@ -108,13 +108,16 @@ html {
         ****  FOOTER
         ***/
         footer {
-
+            a {
+                &:hover {
+                    i {
+                        color: $c-accent-4;
+                    }
+                }
+            }
+            
             i {
                 color: $bg-light;
-
-                &:hover {
-                    color: $c-accent-4;
-                }
             }
         }
 

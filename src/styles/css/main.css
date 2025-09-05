@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /***
 ****  BASE
 ***/
@@ -180,6 +181,30 @@ body {
 }
 .btn.hover-slide-right:hover::before {
   width: 100%;
+}
+
+/* ✅ Hover effects only on devices that support hover (desktop/laptop) */
+@media (hover: hover) and (pointer: fine) {
+  .hover-effect {
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+  }
+}
+/* 🚫 Disable hover on touch devices (mobile/tablet) */
+@media (hover: none) and (pointer: coarse) {
+  .hover-effect:hover {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+/* ✅ JS fallback (older iOS / edge cases) */
+.no-hover .hover-effect:hover {
+  -webkit-transform: none !important;
+          transform: none !important;
+  -webkit-transition: none !important;
+  transition: none !important;
 }
 
 body {
@@ -467,11 +492,11 @@ html.dark .project-card a,
 html.dark .project-card p.color--grey {
   color: #fffbf6;
 }
+html.dark footer a:hover i {
+  color: #ABD9E3;
+}
 html.dark footer i {
   color: #fffbf6;
-}
-html.dark footer i:hover {
-  color: #ABD9E3;
 }
 
 /***
@@ -744,6 +769,9 @@ footer ul li {
 }
 footer ul li:not(:last-child) {
   margin-right: 0.5em;
+}
+footer ul li a:hover i {
+  color: #165863;
 }
 footer ul li i {
   font-size: 1.75em;
