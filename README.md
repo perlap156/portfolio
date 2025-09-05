@@ -1,12 +1,33 @@
-# React + Vite
+# Perla Orona
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Web Developer | Front-End Specialist**
 
-Currently, two official plugins are available:
+## About Me
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Experienced with front-end and back-end development, creating responsive and efficient web applications. Utilizes a variety of coding languages and frameworks to build user-centric solutions that meet business objectives. Strong understanding of collaborative workflows and version control systems to ensure seamless project completion.
 
-## Expanding the ESLint configuration
+## Experience
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **DealerOn** — Web Developer *(Nov 2024 – Sept 2025)*  
+  Designed and developed custom pages using DealerOn’s CMS for various dealership websites, utilizing GA4 tagging while using best practices for ADA, SEO, and performance. Reviewed other developers’ code and design for clean code, proper GA4 tagging, and responsive design on all browsers.
+
+- **Finn Partners** — Web Developer *(Oct 2021 – May 2024)*  
+  Crafted unique WordPress themes and conducted ad hoc support tasks. Maintained bconsistent visual branding across a website by standardizing fonts, formatting, images, and layout. Ensured ADA compliance by reinforcing industry best practices.Conducted regular testing and debugging to identify and resolve technical issues promptly.
+
+- **Jonah Digital Agency** — Front-End Developer *(Oct 2020 – Sep 2021)*  
+  Engineered custom web pages through Jonah's CMS, closely collaborating with design teams to bring concepts to fruition. Addressed development-related support tickets, ensuring timely and effective resolution. Demonstrated strong multitasking abilities, seamlessly integrating efforts with both internal and external teams. Enhanced user experience by implementing responsive design techniques and ensuring cross-browser compatibility.
+
+- **Mizzen+Main** — Front-End Developer *(Jun 2019 – May 2020)*  
+  Spearheaded the creation of web pages and templates to optimize the user interface for the company's digital presence. Troubleshot and resolved technical issues through Shopify, ensuring seamless functionality and user experience. Integrated various APIs to extend website capabilities while ensuring adherence to WCAG 2.0 standards for accessibility.
+
+- **Elevation Ads** — Front-End Developer *(Oct 2018 – May 2019)*  
+  Created user-centric websites by leveraging WordPress, ensuring adaptability and functionality across devices. Adapted and refined existing code to meet evolving client needs and objectives. Incorporated mobile-first design principles to enhance user engagement and achieve client-specific website goals.
+
+## Tech Stack & Tools
+
+- **Frontend**: HTML, SCSS, JavaScript, React/Vite  
+- **Backend**: Node.js
+
+## Resume
+
+Download my resume from my [portfolio site](https://perla-orona.com/assets/Perla_Orona_Resume.pdf) 
